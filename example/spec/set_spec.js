@@ -1,5 +1,7 @@
-var JS  = require('jstest'),
-    Set = require('../lib/set').Set
+(function() {
+
+var JS  = this.JS  || require('jstest'),
+    Set = this.Set || require('../lib/set').Set
 
 JS.Test.describe('Set', function() { with(this) {
   before(function() { with(this) {
@@ -16,3 +18,5 @@ JS.Test.describe('Set', function() { with(this) {
     }})
   }})
 }})
+
+})()
