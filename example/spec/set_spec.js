@@ -1,3 +1,6 @@
+var JS  = require('jstest'),
+    Set = require('../lib/set').Set
+
 JS.Test.describe('Set', function() { with(this) {
   before(function() { with(this) {
     this.set = new Set(['foo'])
